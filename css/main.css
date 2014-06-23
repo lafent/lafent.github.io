@@ -11,6 +11,7 @@ footer {
     text-align: right;
     padding: 5px 15px; }
 
-p.clear {
+p.bottom-clear {
   clear: both;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding-bottom: 20px; }
