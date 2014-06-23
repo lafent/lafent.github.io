@@ -4610,7 +4610,7 @@ meta.foundation-mq-topbar {
       background: #9a9a9a;
       color: #333333; }
       .top-bar-section ul li.active > a:hover {
-        background: #0078a0;
+        background: #d7d7d7;
         color: #333333; }
   .top-bar-section .has-form {
     padding: 15px; }
@@ -4741,7 +4741,7 @@ meta.foundation-mq-topbar {
       color: #333333;
       background: #9a9a9a; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-        background: #0078a0; }
+        background: #d7d7d7; }
     .top-bar-section .has-dropdown > a {
       padding-right: 35px !important; }
       .top-bar-section .has-dropdown > a:after {
