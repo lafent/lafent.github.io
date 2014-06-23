@@ -1,16 +1,27 @@
 lafent.github.io
 ================
+:author:              Lee Fent
+:copyright:           Lee Fent 2014
+:backend:             html5
+:theme:               flask
+:source-highlighter:  source-highlight
+:toc2:
+:footer!:
+:data-uri:
 
-A scaffold for getting rolling with Jade, Twitter Bootstrap and Grunt.
+Contents
+--------
+
+A scaffold for getting rolling with Jade, Zurb Foundation, and Grunt.
 
 This is just a setup for building a static site using:
 
-*   Grunt Tasks
-*   Node.js
-*   Jade Templates
-*   Twitter Bootstrap v3
-*   jQuery and jQuery Tablesorter
-*   Google Analytics
+* Grunt Tasks
+* Node.js
+* Jade Templates
+* Zurb Foundation
+* jQuery and jQuery Tablesorter
+* Google Analytics
 
 After you run the default grunt task you can ship the www directory to your 
 web host and get on with life.  
@@ -21,30 +32,17 @@ Getting Started
 You'll need http://git-scm.com/[git], http://nodejs.org/[node.js], and an
 internet connection to get things rolling.
 
-*NOTE* The examples provided are derived from the Twitter Bootstrap website
-and are representative of their work and effort, not mine.
-
-. `git clone https://github.com/lafent/grunt-and-done.git`
-. `cd grunt-and-done`
-. `npm install`
-. `grunt` 
-
 Now point your browser to http://localhost:3456/[http://localhost:3456/] and
 view your website.
 
 Todo
 ----
 
-. Improve documentation.
-. [line-through]*Setup production tasks in grunt, including uglify and concat 
-  tasks.*
-. Look at other grunt tasks that can be inlined.
-. Look at usemin to handle configuring use of minified versions.
-. Add other examples from the bootstrap examples page.
-. Consider other basic libraries to add to the base. *Be critical of utility*
+. Add more articles.
+. Review design UI.
+. Consider Mobile interface.
 
-Reminder
---------
-
-Please update the ga.js file to include the correct account code.
-
+//---------------------------------------------------------------------------//
+// vim: set syntax=asciidoc:
+// vim: set ft=asciidoc:
+//---------------------------------------------------------------------------//
