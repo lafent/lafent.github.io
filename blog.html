@@ -6,7 +6,7 @@
     <link href="/css/foundation.css" rel="stylesheet" type="text/css">
     <link href="/css/main.css" rel="stylesheet" type="text/css">
     <script src="/js/vendor/modernizr.js"></script>
-    <title>Home</title>
+    <title>Blog</title>
   </head>
   <body>
     <div class="contain-to-grid sticky">
@@ -35,21 +35,29 @@
     </div>
     <div class="row">
       <header class="small-12 columns">
-        <h1>Welcome and have a seat!</h1>
+        <h1>Blog</h1>
       </header>
     </div>
     <div class="row">
       <div class="small-12 columns">
         <main>
-          <p>So, here we are.</p>
-          <h3>Recent Entries</h3>
           <article>
-            <p><strong>Command-Line Tools</strong></p>
+            <p>Is it obvious I have no idea what I'm doing? Probably.  </p>
             <p>
-              A brief list of the command-line tools I find invaluable in my
-              routine work. 
+              Anyway, I decided I should have a blog so that when people talk
+              about the issues with blogging, I at least have some idea of what
+              the general classes of problems are and how to effectively 
+              address them.  
             </p>
-            <p><a href="/articles/command-line-tools.html" class="button small radius">More &raquo;</a></p>
+            <p>
+              At a technical level, this probably doesn't really even qualify
+              as a blog.  The static site content is generated from a batch
+              of jade templates by a grunt task-runner that compiles the sass
+              style sheets, javascript, and templates into a batch of html,
+              css, and javascript that gets pushed to github.  It's completely
+              homebrewed, and, served as the basis for a presentation I gave 
+              at a national convention.
+            </p>
           </article>
         </main>
       </div>
@@ -64,6 +72,7 @@
     </footer>
     <script>
       $(document).ready(function() {
+        $("a[href$='blog.html']").parent().addClass("active");
       });
       
     </script>

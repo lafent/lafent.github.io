@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/foundation.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <script src="/js/vendor/modernizr.js"></script>
+    <title>About</title>
+  </head>
+  <body>
+    <div class="contain-to-grid sticky">
+      <nav data-topbar class="top-bar">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/">Home!</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+        <section class="top-bar-section">
+          <ul class="left">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <ul class="right">
+            <li class="has-dropdown"><a href="#">Articles</a>
+              <ul class="dropdown">
+                <li><a href="/articles/command-line-tools.html">Command-Line Tools</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+    <div class="row">
+      <header class="small-12 columns">
+        <h1>About Me</h1>
+      </header>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <main>
+          <p>
+            Howdy, I'm Lee Fent, star of television, stage, and all-around 
+            rascal.  At least part of what is written on this site is truthful,
+            and at least part of it, by default, isn't truthful.  But, at least 
+            it's all written down.  
+          </p>
+          <p>
+            Mostly I'm a web developer, for some value of both web and i
+            developer. I've written web application in ASP.NET, Groovy/Grails,
+            PHP, (shudder) classic ASP, Java, Python, Javascript, and even
+            Perl. I find Grails, with it's combination of Groovy's syntatic 
+            sugar and easy access to the powerful Java ecosystem, to be a very
+            productive environment, but can pretty much get it done in any of
+            those languages.
+          </p>
+          <p>
+            The other part is that I've been known to write software for other 
+            systems.  I've workd with ASTM, HL7, DICOM, and a whole slew of
+            other data formats and interchanges.  Software I've writen is used
+            in several hospitals around the country.  If the thought of lives
+            and quality of care depending on your software doesn't scare you,
+            I don't know what will.
+          </p>
+          <p>
+            As a cruel trick of fate, I also administrate a variety of 
+            machines. Currently I'm in charge of about a half a dozen web 
+            servers and various other service providers such as SVN and MySQL.
+            Generally my servers are running CentOS or Windows Server.  I've 
+            been working with <a href="http://www.ansible.com/">Ansible</a> to make my life a little easier.
+          </p>
+        </main>
+      </div>
+    </div>
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/jquery.tablesorter.js"></script>
+    <script src="/js/vendor/foundation.min.js"></script>
+    <script src="/js/vendor/ga.js"></script>
+    <script src="/js/main.js"></script>
+    <footer>
+      <div>&copy; Lee Fent 2014</div>
+    </footer>
+    <script>
+      $(document).ready(function() {
+        $("a[href$='about.html']").parent().addClass("active");
+      });
+      
+    </script>
+  </body>
+</html>
