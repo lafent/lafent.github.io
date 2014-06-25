@@ -1,4 +1,4 @@
-/* grunt-and-done v0.0.1 2014-06-23 */
+/* grunt-and-done v0.0.1 2014-06-25 */
 
 /* Site Specific Overrides */
 footer {
@@ -6,7 +6,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #ecfaff; }
+  background-color: #adadad; }
   footer div {
     text-align: right;
     padding: 5px 15px; }

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/foundation.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <script src="/js/vendor/modernizr.js"></script>
+    <title>Introduction to Grunt</title>
+  </head>
+  <body>
+    <div class="contain-to-grid sticky">
+      <nav data-topbar class="top-bar">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/">Home!</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+        <section class="top-bar-section">
+          <ul class="left">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <ul class="right">
+            <li class="has-dropdown"><a href="#">Articles</a>
+              <ul class="dropdown">
+                <li><a href="/articles/introduction-to-grunt.html">Introduction to Grunt</a></li>
+                <li><a href="/articles/command-line-tools.html">Command-Line Tools</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+    <div class="row">
+      <header class="small-12 columns">
+        <h1>Introduction to Grunt</h1>
+      </header>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <main>
+          <article>
+            <div class="callout panel radius">This was a 15 minute session presented at NETC 2014.</div>
+            <h3>What is Grunt</h3>
+            <p>
+              Grunt is a node.js powered task runner.
+              What does that even <strong>mean</strong>?
+              Grunt makes you more productive and less stressed.
+            </p>
+            <h3>More about Grunt</h3>
+            <p>
+              Grunt fills approximately the same role as <em>make</em>,
+              <em>rake</em>, <em>gradle</em>, and <em>maven</em> in other
+              development environments. 
+            </p>
+            <p>
+              However, Grunt is based on node and fits into a JavaScript based
+              workflow with fewer moving parts and dependencies to keep in
+              sync.
+            </p>
+            <h3>How will Grunt help me</h3>
+            <p>Grunt helps you:</p>
+            <ul>
+              <li>Automate your workflow</li>
+              <li>Bring together best of class tools to improve how you create
+                <applications></applications>
+              </li>
+              <li>Put your tasks into an independant, versionable container</li>
+            </ul>
+            <h3>Getting started with Grunt</h3>
+            <p>Grunt needs several things to get started.  </p>
+            <ol>
+              <li>node.js: It is node.js powered after all.</li>
+              <li><em>package.json</em>: This file contains information about your 
+                <project>and contains a list of the Grunt modules that you'll</project>
+                <use>to make things work.</use>
+              </li>
+              <li><em>Gruntfile.js</em>: This is the file that configures the
+                <modules>from the package.json file and defines your tasks.</modules>
+              </li>
+            </ol>
+            <p>
+              Once those are all assembled, you can run <em>grunt</em> and
+              fire off various tasks for your project.
+            </p>
+            <h3>Some common Grunt tasks</h3>
+            <p>
+              Here are some common tasks that Grunt helps automate and gets
+              all of these tasks out of your hair.
+            </p>
+            <ul>
+              <li>Compile Sass/SCSS/less</li>
+              <li>Concatenate JavaScript files</li>
+              <li>Minify CSS stylesheets</li>
+              <li>Uglify JavaScript files</li>
+              <li>Run lint-ers for JavaScript/CSS files</li>
+            </ul>
+            <h3>Maybe a little less mundane</h3>
+            <p>But Grunt isn't just limited to JavaScript and CSS files.</p>
+            <p>Grunt can help with:</p>
+            <ul>
+              <li>Configure and run unit and integration tests</li>
+              <li>Build projects in a 'src' to 'dist' fashion</li>
+              <li>Livereload the browser</li>
+              <li>Watch files for changes and fire tasks based on those changes</li>
+              <li>Start a local web server for development</li>
+            </ul>
+            <h3>How about something just a little more funky</h3>
+            <p>
+              Grunt isn't limited to particularly web related tasks. There are
+              plugins to all sorts of other things such as:
+            </p>
+            <ul>
+              <li>Copy files to Amazon S3 platform</li>
+              <li>Minify SVG graphics</li>
+              <li>Compile Markdown documents</li>
+              <li>Generate OS Notifications </li>
+            </ul>
+            <h3>So how do I get in on this lazy lifestyle</h3>
+            <ul>
+              <li>Install <em>node</em>
+                <and> </and><em>npm</em>
+              </li>
+              <li>Open a terminal or command shell and run <em>npm install -g grunt-cli</em></li>
+              <li>Whip up a <em>package.json</em> file such as this:
+                <div class="panel radius">
+                  <pre>        
+{
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-jshint": "~0.4.3"
+  }
+}</pre>
+                </div>
+              </li>
+              <li>Run <em>npm install</em></li>
+              <li>Define some grunt tasks in a <em>Gruntfile.js</em></li>
+              <li>Run <em>grunt <some task></em></li>
+            </ul>
+            <h3>"Real World" use</h3>
+            <p>How fast can you get started on a website?  How about:</p>
+            <ol>
+              <li><em>git clone https://github.com/lafent/grunt-and-done.git</em></li>
+              <li><em>cd grunt-and-done && npm install</em></li>
+              <li><em>grunt</em></li>
+            </ol>
+            <p>
+              Now you have Twitter Bootstrap v3, jQuery, Google Analytics, 
+              less stylesheets, Jade html templating. a local web server, and
+              a watch task to updating the output files upon save.  
+            </p>
+            <p> <strong>Not bad for three commands.</strong></p>
+            <h3>A word of caution</h3>
+            <p>
+              Careful with the plugins.  There are plugins, then there are
+              "plugins". Strictly speaking this problem is more properly with
+              the node.js ecosystem, but the rapid rate of development, 
+              general flexibility, and somewhat ambiguous quality of some of
+              the plugins and modules can have some unpleasant side effects. 
+            </p>
+            <p> <strong>Always practice safe computing.</strong></p>
+            <h3>Questions?</h3>
+            <p>Just shoot me an email, catch me on IRC, or hit me up on twitter.</p>
+          </article>
+        </main>
+      </div>
+    </div>
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/jquery.tablesorter.js"></script>
+    <script src="/js/vendor/foundation.min.js"></script>
+    <script src="/js/vendor/ga.js"></script>
+    <script src="/js/main.js"></script>
+    <p class="bottom-clear"></p>
+    <footer>
+      <div>&copy; Lee Fent 2014</div>
+    </footer>
+    <script>
+      $(document).ready(function() {
+        $("a[href$='introduction-to-grunt.html']").parent().addClass("active");
+      });
+      
+    </script>
+  </body>
+</html>
