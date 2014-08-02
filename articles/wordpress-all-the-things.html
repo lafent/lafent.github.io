@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/foundation.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <script src="/js/vendor/modernizr.js"></script>
+    <title>Wordpress All the Things!</title>
+  </head>
+  <body>
+    <div class="contain-to-grid sticky">
+      <nav data-topbar class="top-bar">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/">Home!</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+        <section class="top-bar-section">
+          <ul class="left">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <ul class="right">
+            <li class="has-dropdown"><a href="#">Articles</a>
+              <ul class="dropdown">
+                <li><a href="/articles/wordpress-all-the-things.html">Wordpress All the Things!</a></li>
+                <li><a href="/articles/introduction-to-grunt.html">Introduction to Grunt</a></li>
+                <li><a href="/articles/command-line-tools.html">Command-Line Tools</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+    <div class="row">
+      <header class="small-12 columns">
+        <h1>Wordpress All the Things!</h1>
+      </header>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <main>
+          <article>
+            <h3>Why, whatever do I mean?</h3>
+            <p>
+              At work we've been trying to introduce lighter options for
+              helping faculty communicate.  Although we have a more heavy-weight
+              option, faculty have requested a simpler setup, one that enables
+              them to interact with their audiences more easily.
+            </p>
+            <div class="panel callout radius">
+              The actual statement was that our standard template looks like
+              a university website and they want something that looks bloggy.
+            </div>
+            <p>My first reaction was: What does that *even* mean?  </p>
+            <p>
+              I had to put aside my programmer brain for a minute, but then I 
+              realized they meant that there was too much ceremony in the way
+              and they wanted less fancy graphics and more communications in
+              their blog.  Or, put another way, the signal-to-noise ratio was
+              too high for their liking. 
+            </p>
+            <p>
+              Now if you've ever worked at a university, you know that many 
+              of the things we do aren't tied to a reason, but rather a policy.
+              Sometimes the policies have good reasons, and sometimes... well, 
+              not so much.
+            </p>
+            <p class="panel callout radius">
+              Heck, in this case it's not even a policy, since policy has a
+              very specific set of requirements in order to be a policy.
+              However, for our uses policy gets the idea across.
+            </p>
+            <p>
+              Anyway, so we have a policy that says we should use a specific
+              template to maintain branding identity, uniformity, and a myriad
+              of other good goals. But, like many good things, a bit too much 
+              is still a bit too much.  So we have faculty who would like to 
+              reach out to the people they're supposed to help and provide
+              benefits to, but feel restricted and impared by the systems that 
+              are supposed to enable those very efforts.  It's enough to make
+              a person need a lie down.
+            </p>
+            <p>
+              So what was the solution?  I mean we need the less ceremony 
+              solution, but we need to main the policy happy at the same time.
+            </p>
+            <p>
+              What we did was redesign the (very) desktop-centric, graphics 
+              heavy template into a light weight, html5-based RWD-infused
+              wordpress template.  Backed by Zurb's Foundation we started 
+              with an article forward mentality, since the information was key.  
+              We kept the graphics to a minimum with a icon set for most social
+              media options and clean markup.  
+            </p>
+            <p>
+              The whole process is based on a grunt task runner setup that 
+              allows us to tweak Zurb's sass layout, recompile to css, and then
+              (optionally) update the dev or prod instances.  The grunt task
+              also includes an live demo site with a dummy layout so we can
+              check things on the local developers machine before trying to 
+              go to dev.  This has probably saved us a million headaches, but
+              since we're not having them, it's hard to count!  
+            </p>
+            <p>
+              Is it perfect?  No, far from it.  But is it better?  Oh my yes. 
+              Miles and miles better.  You can interact usefully on a phone, 
+              which easily opens up another communication channel and because
+              we're text-centric, makes a lighter payload for those users.
+            </p>
+            <p>Want to discus what we did and how we went about it?</p>
+            <p>Just shoot me an email, catch me on IRC, or hit me up on twitter.</p>
+          </article>
+        </main>
+      </div>
+    </div>
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/jquery.tablesorter.js"></script>
+    <script src="/js/vendor/foundation.min.js"></script>
+    <script src="/js/vendor/ga.js"></script>
+    <script src="/js/main.js"></script>
+    <p class="bottom-clear"></p>
+    <footer>
+      <div>&copy; Lee Fent 2014</div>
+    </footer>
+    <script>
+      $(document).ready(function() {
+        $("a[href$='wordpress-all-the-things.html']").parent().addClass("active");
+      });
+      
+      
+    </script>
+  </body>
+</html>
