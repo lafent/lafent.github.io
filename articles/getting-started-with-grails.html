@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/foundation.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <script src="/js/vendor/modernizr.js"></script>
+    <title>Getting Started with Grails</title>
+  </head>
+  <body>
+    <div class="contain-to-grid sticky">
+      <nav data-topbar class="top-bar">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/">Home!</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+        <section class="top-bar-section">
+          <ul class="left">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <ul class="right">
+            <li class="has-dropdown"><a href="#">Articles</a>
+              <ul class="dropdown">
+                <li><a href="/articles/getting-started-with-grails.html">Getting Started with Grails</a></li>
+                <li><a href="/articles/wordpress-all-the-things.html">Wordpress All the Things!</a></li>
+                <li><a href="/articles/introduction-to-grunt.html">Introduction to Grunt</a></li>
+                <li><a href="/articles/command-line-tools.html">Command-Line Tools</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+    <div class="row">
+      <header class="small-12 columns">
+        <h1>Getting Started with Grails</h1>
+      </header>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <main>
+          <article>
+            <p>
+              I thought take a few minutes and jot down some of how I work
+              with Grails, Groovy, and associated tools.
+            </p>
+            <h3>A Little Groundwork Before We Begin</h3>
+            <p>
+              So my goto tool for setting up a new environment (system) to
+              work on with grails is to ensure that a JVM is available to me. 
+              Typically I use a java-7 based jvm, but I haven't had any issues
+              using the OpenJDK one vs. the Oracle one.  That's not saying 
+              there aren't some issues, just that they haven't bitten me.
+            </p>
+            <h3>First Steps</h3>
+            <p>Once the JDK is installed and available I install  <a href="http://gvmtool.net/">GVMTool </a>for convenience.  You can just download and install grails 
+              directly, but since I have several grails projects involving 
+              different versions of grails, I find the management features 
+              from gvm to be too handy to ignore.
+            </p>
+            <p class="panel radius callout">
+              GVM actually allows you to install a fair number of other 
+              frameworks, but for today we'll just focus on grails.
+            </p>
+            <p>
+              GVM works much like RVM (that inspired it) in that it allows you
+              to keep different versions of grails available without having to
+              manually juggle directory paths or make crazy changes to your 
+              configuration.
+            </p>
+            <p>So, to kick things off, you can just run 
+              <pre>gvm install grails</pre>and it will install the most recent version of grails into a set
+              of private directories and ask you if you want to set that into
+              your path. 
+            </p>
+            <p>From that point onward it's just standard grails, and that rocks!</p>
+            <h3>A Few More Commands</h3>
+            <P>
+               
+              If you have an older project you can install specific versions
+              with 
+              <pre>gvm install grails <version number></pre>Versions as far back as 1.2.0 are available.  
+            </P>
+            <p>Need to know what version you have installed? 
+              <pre>gvm list grails</pre>is your friend.  Installed versions are marked as well as the 
+              version that is currently installed.
+            </p>
+            <p>
+              Now that you know what version you're on, and you have the
+              version you need installed, how do you switch? Easy, 
+              <pre>gvm use grails <version></pre>and you're ready to go.
+            </p>
+            <h3>Summary for GVM (TL;DR)</h3>
+            <p>GVM makes managing grails (and other projects) dropdead simple.</p>
+            <ol>
+              <li>
+                <pre>gvm install grails</pre>
+              </li>
+              <li>
+                <pre>gvm list grails</pre>
+              </li>
+              <li>
+                <pre>gvm use grails <version></pre>
+              </li>
+            </ol>
+          </article>
+        </main>
+      </div>
+    </div>
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/jquery.tablesorter.js"></script>
+    <script src="/js/vendor/foundation.min.js"></script>
+    <script src="/js/vendor/ga.js"></script>
+    <script src="/js/main.js"></script>
+    <p class="bottom-clear"></p>
+    <footer>
+      <div>&copy; Lee Fent 2014</div>
+    </footer>
+    <script>
+      $(document).ready(function() {
+        $("a[href$='playing-with-cordova.html']").parent().addClass("active");
+      });
+      
+    </script>
+  </body>
+</html>

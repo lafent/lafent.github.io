@@ -6,7 +6,7 @@
     <link href="/css/foundation.css" rel="stylesheet" type="text/css">
     <link href="/css/main.css" rel="stylesheet" type="text/css">
     <script src="/js/vendor/modernizr.js"></script>
-    <title>Blog</title>
+    <title>Plugging in to Wordpress</title>
   </head>
   <body>
     <div class="contain-to-grid sticky">
@@ -38,35 +38,23 @@
     </div>
     <div class="row">
       <header class="small-12 columns">
-        <h1>Blog</h1>
+        <h1>Plugging in to Wordpress</h1>
       </header>
     </div>
     <div class="row">
       <div class="small-12 columns">
         <main>
           <article>
-            <p>Is it obvious I have no idea what I'm doing? Probably.  </p>
             <p>
-              Anyway, I decided I should have a blog so that when people talk
-              about the issues with blogging, I at least have some idea of what
-              the general classes of problems are and how to effectively 
-              address them.  
+              As part of a consulting job I've been developing several 
+              wordpress plugins.
             </p>
-            <p>
-              At a technical level, this probably doesn't really even qualify
-              as a blog.  The static site content is generated from a batch
-              of jade templates by a grunt task-runner that compiles the sass
-              style sheets, javascript, and templates into a batch of html,
-              css, and javascript that gets pushed to github.  It's completely
-              homebrewed, and, served as the basis for a presentation I gave 
-              at a national convention.
-            </p>
-            <p>
-              I'm using Zurb's Foundation CSS Framework. I like it so far, but
-              I'm afraid I like it just because it's not Bootstrap. Clearly,
-              that's not fair since Bootstrap is an excellent framework and 
-              I've used it for a ton of heavy lifting on websites.
-            </p>
+            <div class="panel callout radius">
+              Since it's a consulting job, I can only speak in generalities,
+              which is a bummer.
+            </div>
+            <p>Want to discus what we did and how we went about it?</p>
+            <p>Just shoot me an email, catch me on IRC, or hit me up on twitter.</p>
           </article>
         </main>
       </div>
@@ -82,8 +70,10 @@
     </footer>
     <script>
       $(document).ready(function() {
-        $("a[href$='blog.html']").parent().addClass("active");
+        $("a[href$='plugging-in-to-wordpress.html']").parent().addClass("active");
       });
+      
+      
       
     </script>
   </body>
