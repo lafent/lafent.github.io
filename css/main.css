@@ -1,4 +1,4 @@
-/* grunt-and-done v0.0.1 2014-10-22 */
+/* grunt-and-done v0.0.1 2015-02-22 */
 
 /* Site Specific Overrides */
 footer {
@@ -6,12 +6,15 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #34495e; }
+  background-color: #333; }
   footer div {
     text-align: right;
-    padding: 5px 15px; }
+    padding: 5px 15px;
+    color: #fff; }
 
 p.bottom-clear {
   clear: both;
   margin-bottom: 20px;
   padding-bottom: 20px; }
+
+/*# sourceMappingURL=main.css.map */
