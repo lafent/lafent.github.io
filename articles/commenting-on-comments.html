@@ -6,7 +6,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css" rel="stylesheet" type="text/css">
     <link href="/css/main.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/vendor/modernizr.js"></script>
-    <title>Plugging in to WordPress</title>
+    <title>Commenting on Comments</title>
   </head>
   <body>
     <div class="contain-to-grid sticky">
@@ -39,7 +39,7 @@
     </div>
     <div class="row">
       <header class="small-12 columns">
-        <h1>Plugging in to WordPress</h1>
+        <h1>Commenting on Comments</h1>
       </header>
     </div>
     <div class="row">
@@ -47,14 +47,45 @@
         <main>
           <article>
             <p>
-              As part of a consulting job I've been developing several 
-              WordPress plugins.
+              So, at work we may be a bit atypical, but we've got several 
+              WordPress installations that are actually networks of sites.
             </p>
             <div class="panel callout radius">
-              Since it's a consulting job, I can only speak in generalities,
-              which is a bummer.
+              There is actually a good reason they're separated, but it's more
+              about business logic than programming logic.
             </div>
-            <p>Want to discus what we did and how we went about it?</p>
+            <p>
+              All was good for a while, but as the sites got more readers and 
+              more spambots started to post, things started to get out out hand
+              every blog post spawned dozens of comments. All the spam catchers
+              in the world won't get it all, so dozens of comments were still
+              coming through on a weekly basis.  The problem is that the blog
+              authors aren't really interested in pruning that.
+            </p>
+            <p>
+              When the comments pile is as high as an elephant's eye, what is
+              clever admin to do?  That's right, write a dashboard widget.
+            </p>
+            <p>Which is just what I did.</p>
+            <h4>Presenting</h4><a href="https://github.com/lafent/comms-dashboard/" class="button radius">Comms Dashboard</a>
+            <p>
+              Comms Dashboard only has one purpose, let an administrator see
+              what blogs have comments that might need sorting out.  You can 
+              configure things to only show blogs with comments in need of 
+              attention, or, if you like pain, you can see all of your 
+              subsites.
+            </p>
+            <div class="panel callout radius">
+              I wouldn't run this on a large site without some testing, it
+              could get snarly hammering the database for 1000+ sites.  Then
+              again, if you're running a large site, you have your own pains
+              to deal with.
+            </div>
+            <p>
+               
+              Want to discus what I did and how I went about it?  Have a 
+              suggestion?
+            </p>
             <p>Just shoot me an email, catch me on IRC, or hit me up on twitter.</p>
           </article>
         </main>
@@ -67,7 +98,7 @@
     <script src="/js/main.js"></script>
     <p class="bottom-clear"></p>
     <footer>
-      <div>&copy; Lee Fent 2014</div>
+      <div>&copy; Lee Fent 2015</div>
     </footer>
     <script>
       $(document).ready(function() {
